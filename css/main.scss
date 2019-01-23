@@ -49,7 +49,7 @@ nav ul {
     right: 0;
     text-align: left;
     background: rgb(36, 41, 44);
-    height: fit-content;
+    height: 100vh;
     z-index: 999;
     padding-top: 3em;
     li a {
@@ -142,13 +142,16 @@ nav ul {
     }
     header nav ul li {
         user-select: none;
-        &:hover:not(li:first-child) {
+        &:hover {
             background: rgb(65, 73, 78);
             color: while;
         }
         &:hover a {
             color: #ffffff;
         }
+    }
+    header nav ul li:first-child:hover{
+        background:transparent;
     }
 }
 
@@ -181,7 +184,7 @@ nav ul {
         text-align: right;
         padding: 1em 2em;
         &:hover {
-            background: inherit
+            background: inherit;
         }
     }
     #flexslider {

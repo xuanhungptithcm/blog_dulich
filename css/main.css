@@ -53,9 +53,7 @@ nav ul {
   right: 0;
   text-align: left;
   background: #24292c;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   z-index: 999;
   padding-top: 3em;
 }
@@ -162,12 +160,15 @@ nav ul li a:hover {
         -ms-user-select: none;
             user-select: none;
   }
-  header nav ul li:hover:not(li:first-child) {
+  header nav ul li:hover {
     background: #41494e;
     color: while;
   }
   header nav ul li:hover a {
     color: #ffffff;
+  }
+  header nav ul li:first-child:hover {
+    background: transparent;
   }
 }
 
