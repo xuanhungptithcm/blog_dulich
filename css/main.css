@@ -125,6 +125,7 @@ nav ul li a:hover {
 }
 
 .main {
+  max-width: 100%;
   text-align: left;
 }
 
@@ -315,6 +316,20 @@ nav ul li a:hover {
   #footer .footer-distributed .footer-center i {
     margin-left: 0;
   }
+  #footer .footer-center .infor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer .footer-center .infor p {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -448,6 +463,10 @@ nav ul li a:hover {
   line-height: 1.39286rem;
   font-style: italic;
   margin-top: 10px;
+}
+
+.main.row {
+  margin: 0;
 }
 
 .main.row .article .top-article {

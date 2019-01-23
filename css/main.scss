@@ -113,6 +113,7 @@ nav ul {
 }
 
 .main {
+    max-width: 100%;
     text-align: left;
     .entry-title {
         font-size: 24px;
@@ -309,7 +310,14 @@ nav ul {
         .footer-distributed .footer-center i{
             margin-left: 0;
         }
-    
+        .footer-center .infor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                width: 200px;
+            }
+    }
     }
     
 }
@@ -439,6 +447,7 @@ nav ul {
 }
 
 .main.row {
+    margin: 0;
     .article {
         .top-article {
             position: relative;
