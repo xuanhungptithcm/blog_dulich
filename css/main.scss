@@ -27,7 +27,26 @@ a {
 .logo {
     width: 130px;
 }
-
+::-webkit-scrollbar{
+    background: #ddd;
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    box-shadow:  inset 0 0 10px #00000070;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg, #3498db, #34495e);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -214,6 +233,7 @@ nav ul {
         color: #ffffff;
         vertical-align: middle;
         margin:0;
+        text-align: left;
     }
     
     .footer-distributed .footer-center p span{
@@ -361,7 +381,7 @@ nav ul {
     }
     .show-desktop {
         display: block;
-        margin: 0 auto 13% auto;
+        margin: 0;
     }
     .hide-desktop {
         display: none;
@@ -474,6 +494,156 @@ nav ul {
             .info {
                 margin-top: 10px;
                 display: block
+            }
+        }
+    }
+}
+// trnag home 
+.banner{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+#services{
+    .title{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0 30px;
+        h2{
+            text-transform: uppercase;
+            position: relative;
+            font-size: 1.2em;
+            width: 100%;
+            font-weight: bold;
+            display: block;
+            &::after{
+                content: '';
+                width: 100px;
+                height: 4px;
+                background: red;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translate(-50%);
+
+            }
+        }
+    }
+    .container{
+        .item{
+            text-align: left;
+            line-height: 17px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+
+            img{
+                max-width: 100%;
+            }
+            >a{
+                display: block;
+                margin: 20px 0 5px;
+                color: #3c3e40;
+                padding-bottom: 12px;
+                span{
+                    text-transform: capitalize;
+                    font-size: 11px;
+                    font-weight: bold
+                }
+                &:hover{
+                    text-decoration: none;
+                    color: #5383d3;
+                }
+            }
+            .detail{
+                position: absolute;
+                right: 0px;
+                bottom: -28px;
+                font-size: 13px;
+                a{
+                    color: #3c3e40;
+                    background: #ddd;
+                    padding: 10px 20px;
+                    &:hover{
+                        text-decoration: none;
+                        color: #5383d3;
+                    }
+                }
+            }
+        }
+    }
+    .container.banner{
+        .row{
+            padding: 0 15px;
+        }
+        .info{
+            height: 380px;
+            background-color: #2a2a2a;
+            padding: 0;
+            h3{
+                a{
+                color: white;
+                display: block;
+                text-align: left;
+                padding: 30px 15px 17px;
+                    font-size: 18px;
+                    font-weight: bold;
+            }
+            }
+            .desc{
+                color: #999;
+                text-align: left;
+                padding: 0 15px;
+                position: relative;
+                a{
+                    font-size: 14px;
+                    color: #5383d3;
+                    line-height: 24px;
+                }
+                &::after{
+                    content: '';
+                    border-bottom: 1px solid;
+                    width: calc(100% - 30px);
+                    height: 1px;
+                    background: #666;
+                    position: absolute;
+                    bottom: -16px;
+                    left: 15px;
+                }
+            }
+        }
+        .image{
+            height: 380px;
+            overflow: hidden;
+            padding: 0;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        
+    }
+    @media (min-width: 576px) and (max-width: 991px){
+        .container {
+            max-width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .container .row {
+            .col-xs-6{
+                max-width: 50%;
+                margin-bottom: 50px;
+            }
+        }
+        .container.banner{
+            .info{
+                height: 200px;
+            }
+            .image{
+                height: 200px;
             }
         }
     }
