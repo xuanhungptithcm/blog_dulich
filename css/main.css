@@ -70,6 +70,11 @@ header {
   margin-top: 45%;
 }
 
+.header {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
 nav ul {
   position: fixed;
   width: 50%;
@@ -161,6 +166,180 @@ nav ul li a:hover {
 
 .main .timer {
   border-bottom: 1px solid #ddd;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#page {
+  padding-top: 45px;
+  min-height: 100px;
+  float: none;
+  clear: both;
+  min-width: 240px;
+  overflow: visible;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page #content {
+  padding-right: 30px;
+}
+
+#page .title {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 28px;
+  clear: both;
+}
+
+#page .article {
+  width: 68.58%;
+  max-width: 720px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#page .post.excerpt:first-of-type {
+  padding-top: 0px;
+}
+
+#page .post.excerpt {
+  clear: both;
+  padding: 30px 0;
+  position: relative;
+}
+
+#page .post {
+  float: left;
+  width: 100%;
+}
+
+#page article {
+  display: block;
+}
+
+#page .post-blogs-container-thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+#page .post-blogs-container-thumbnails .featured-thumbnail-container {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  position: relative;
+  max-width: 35%;
+}
+
+#page .post-blogs-container-thumbnails .featured-thumbnail-container .blog-featured-thumbnail {
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#page .post-blogs-container-thumbnails .thumbnail-post-content {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  max-width: 65%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-left: 30px;
+}
+
+#page .post-blogs-container-thumbnails .thumbnail-post-content h2.title {
+  margin: 0px 0 7px 0;
+}
+
+#page .post-blogs-container-thumbnails .thumbnail-post-content h2.title span.entry-meta {
+  font-style: italic;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-bottom: 7px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+#page .post-blogs-container-thumbnails .thumbnail-post-content .post.excerpt .post-content {
+  font-size: 14px;
+  line-height: 160%;
+  color: #989898;
+}
+
+#page #featured-thumbnail {
+  float: left;
+  width: 100%;
+}
+
+#page .sidebar.c-4-12 {
+  display: block;
+  float: right;
+  width: 28.58%;
+  max-width: 300px;
+  line-height: 150%;
+}
+
+#page aside.sidebar #sidebars .sidebar_list .widget:first-of-type h3 {
+  margin-top: 0;
+  padding-top: 0px;
+}
+
+#page aside.sidebar #sidebars .sidebar_list .widget {
+  padding: 0px;
+  color: #4a4a4a;
+  line-height: 150%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 0 0 1.5em;
+}
+
+#page aside.sidebar #sidebars .sidebar_list .widget h3, #page aside.sidebar #sidebars .sidebar_list #sidebars .widget h3 a {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 20px;
+  color: #000;
+  margin: 20px 0 5px 0;
+  padding: 10px 0;
+}
+
+#page aside.sidebar #sidebars .sidebar_list h3.widget-title:after {
+  display: block;
+  content: ' ';
+  height: 2px;
+  width: 50px;
+  background: #c69c6d;
+  margin: 8px 0 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  #page #page,
+  #page .container,
+  #page .site-branding {
+    max-width: 96%;
+  }
 }
 
 #footer {
